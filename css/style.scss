@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  // background-color: black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// Typography
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}

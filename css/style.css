@@ -37,6 +37,10 @@ body {
   line-height: 1.6;
 }
 
+section {
+  padding: 5em 2em;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -52,12 +56,14 @@ strong {
 
 .intro img {
   width: 80vmin;
+  background-color: red;
 }
 
+/* Typography */
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 
@@ -90,5 +96,11 @@ h3 {
 .section__subtitle--about {
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+/* Intro section */
+.intro {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

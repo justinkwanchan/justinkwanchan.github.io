@@ -38,7 +38,17 @@ body {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 img {
@@ -81,6 +91,7 @@ h3 {
 
 .section__title {
   margin-bottom: 0.25em;
+  text-align: center;
 }
 
 .section__title--intro {
@@ -94,7 +105,6 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
@@ -102,5 +112,18 @@ h3 {
 /* Intro section */
 .intro {
   position: relative;
+}
+
+.intro .intro__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+@media (min-width: 600px) {
+  .intro__img {
+    right: 5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

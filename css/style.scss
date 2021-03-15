@@ -110,6 +110,10 @@ h3 {
 
 @media (min-width: 600px) {
   .intro {
+    .section__title--intro,
+    .section__subtitle--intro {
+      margin-right: 50%;
+    }
     .intro__img {
       right: 5%;
     }

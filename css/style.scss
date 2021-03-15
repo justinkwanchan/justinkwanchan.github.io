@@ -43,6 +43,7 @@ section {
   padding: 2em;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -53,14 +54,6 @@ img {
 
 strong {
   font-weight: var(--fw-bold);
-}
-
-.intro {
-  height: 100vh;
-  img {
-    width: 80vmin;
-    background-color: red;
-  }
 }
 
 /* Typography */
@@ -107,13 +100,15 @@ h3 {
 /* Intro section */
 
 .intro {
-  position: relative;
+  // position: relative;
 
   .intro__img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
+    max-width: 70%;
+    background-color: red;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // width: 100vw;
   }
 }
 

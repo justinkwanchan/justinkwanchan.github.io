@@ -43,7 +43,6 @@ section {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -61,7 +60,7 @@ strong {
 h1,
 h2,
 h3 {
-  line-height: 1;
+  line-height: 1.1;
   margin: 0;
 }
 
@@ -89,6 +88,7 @@ h3 {
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
+  text-align: center;
 }
 
 .section__subtitle--intro,
@@ -100,23 +100,18 @@ h3 {
 /* Intro section */
 
 .intro {
-  // position: relative;
-
   .intro__img {
-    max-width: 70%;
     background-color: red;
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
-    // width: 100vw;
+    max-height: 55%;
+    position: absolute;
+    bottom: 0;
   }
 }
 
 @media (min-width: 600px) {
   .intro {
-  }
-
-  .intro__img {
-    right: 5%;
+    .intro__img {
+      right: 5%;
+    }
   }
 }

@@ -46,9 +46,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -67,7 +64,7 @@ strong {
 h1,
 h2,
 h3 {
-  line-height: 1;
+  line-height: 1.1;
   margin: 0;
 }
 
@@ -95,6 +92,7 @@ h3 {
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
+  text-align: center;
 }
 
 .section__subtitle--intro,
@@ -105,12 +103,14 @@ h3 {
 
 /* Intro section */
 .intro .intro__img {
-  max-width: 70%;
   background-color: red;
+  max-height: 55%;
+  position: absolute;
+  bottom: 0;
 }
 
 @media (min-width: 600px) {
-  .intro__img {
+  .intro .intro__img {
     right: 5%;
   }
 }

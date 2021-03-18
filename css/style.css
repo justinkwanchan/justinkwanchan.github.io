@@ -103,42 +103,58 @@ h3 {
 
 /* NAVIGATION */
 #fp-nav ul li {
-  padding-bottom: 40px;
-  position: relative;
+  padding-bottom: 60px;
 }
 
 #fp-nav ul li .fp-tooltip {
   color: black;
+  font-size: 2em;
   opacity: 1;
   width: auto;
-  top: -11px;
+  top: -30px;
 }
 
-#fp-nav ul li:hover a span {
-  width: 4px;
-  height: 4px;
-  margin: -2px 0 0 -2px;
+#fp-nav ul li .fp-tooltip.fp-right {
+  right: 35px;
+}
+
+#fp-nav ul li a span,
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a span,
+#fp-nav ul li:hover a.active span {
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+}
+
+#fp-nav ul li a span {
+  border: 2px solid black;
+  background-color: white;
 }
 
 #fp-nav ul li a.active span,
 #fp-nav ul li:hover a.active span {
-  width: 10px;
-  height: 10px;
-  margin: -5px 0 0 -5px;
+  background-color: black;
 }
 
 #fp-nav ul li:before {
   position: absolute;
-  left: 6.5px;
+  left: 6px;
   top: 0;
   content: '';
   height: 115%;
   width: 0;
-  border-left: 1px solid #000;
+  border-left: 2px solid #000;
 }
 
 #fp-nav ul li:last-of-type:before {
   border: none;
+}
+
+/* CONTENT */
+#fullpage {
+  width: calc(100% - 110px);
+  background-color: lightblue;
 }
 
 /* INTRO SECTION */
@@ -152,10 +168,11 @@ h3 {
 @media (min-width: 600px) {
   .intro .section__title--intro,
   .intro .section__subtitle--intro {
+    margin-top: 10%;
     margin-right: 50%;
   }
   .intro .intro__img {
-    right: 5%;
+    right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

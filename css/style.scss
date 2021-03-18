@@ -101,14 +101,15 @@ h3 {
 
 #fp-nav {
   ul li {
+    padding-bottom: 40px;
+    position: relative;
+
     .fp-tooltip {
       color: black;
       opacity: 1;
       width: auto;
       top: -11px;
     }
-    padding-bottom: 40px;
-    position: relative;
 
     &:hover a span {
       width: 4px;
@@ -116,33 +117,26 @@ h3 {
       margin: -2px 0 0 -2px;
     }
 
-    a.active span {
-      width: 12px;
-      height: 12px;
-      margin: -6px 0 0 -6px;
+    a.active span,
+    &:hover a.active span {
+      width: 10px;
+      height: 10px;
+      margin: -5px 0 0 -5px;
     }
   }
 
-  // ul li span {
-  //   padding: 5px 10px;
-  //   margin-right: 10px;
-  // }
-  // ul li span:before {
-  //   content: '';
-  //   position: absolute;
-  //   border-left: 1px solid;
-  //   left: 14px;
-  //   bottom: 0;
-  //   z-index: -1;
-  //   height: 100%;
-  // }
-
-  // ul li:last-child span:before {
-  //   content: none;
-  // }
-  // ul li:last-child {
-  //   padding-bottom: 0;
-  // }
+  ul li:before {
+    position: absolute;
+    left: 6.5px;
+    top: 0;
+    content: '';
+    height: 115%;
+    width: 0;
+    border-left: 1px solid #000;
+  }
+  ul li:last-of-type:before {
+    border: none;
+  }
 }
 
 /* INTRO SECTION */

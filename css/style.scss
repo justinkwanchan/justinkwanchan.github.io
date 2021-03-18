@@ -55,7 +55,7 @@ strong {
   font-weight: var(--fw-bold);
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 
 h1,
 h2,
@@ -97,7 +97,43 @@ h3 {
   margin-bottom: 1em;
 }
 
-/* Intro section */
+/* NAVIGATION */
+
+#fp-nav {
+  ul li {
+    .fp-tooltip {
+      color: black;
+      opacity: 1;
+      width: auto;
+      top: -11px;
+    }
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  // ul li span {
+  //   padding: 5px 10px;
+  //   margin-right: 10px;
+  // }
+  // ul li span:before {
+  //   content: '';
+  //   position: absolute;
+  //   border-left: 1px solid;
+  //   left: 14px;
+  //   bottom: 0;
+  //   z-index: -1;
+  //   height: 100%;
+  // }
+
+  // ul li:last-child span:before {
+  //   content: none;
+  // }
+  // ul li:last-child {
+  //   padding-bottom: 0;
+  // }
+}
+
+/* INTRO SECTION */
 
 .intro {
   .intro__img {

@@ -109,6 +109,18 @@ h3 {
     }
     padding-bottom: 40px;
     position: relative;
+
+    &:hover a span {
+      width: 4px;
+      height: 4px;
+      margin: -2px 0 0 -2px;
+    }
+
+    a.active span {
+      width: 12px;
+      height: 12px;
+      margin: -6px 0 0 -6px;
+    }
   }
 
   // ul li span {

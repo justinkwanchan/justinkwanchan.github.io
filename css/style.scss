@@ -180,3 +180,17 @@ h3 {
     }
   }
 }
+
+/* PROJECTS SECTION */
+
+.my-projects {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    .portfolio__item {
+      width: 30%;
+      .portfolio__img {
+      }
+    }
+  }
+}

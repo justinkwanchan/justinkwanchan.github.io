@@ -31,6 +31,8 @@
 - Links to GitHub and live demo (if available)
 - Short description of each app
 - Tech stack
+- Challenges
+- Things learned?
 
 ## Contact
 

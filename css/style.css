@@ -187,5 +187,6 @@ h3 {
 
 .my-projects .portfolio .portfolio__item {
   width: 30%;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

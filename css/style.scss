@@ -40,6 +40,10 @@ body {
 }
 
 section {
+  position: relative;
+  width: calc(100% - 200px);
+  height: 100vh;
+  // background-color: lightblue;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -150,13 +154,6 @@ h3 {
   }
 }
 
-/* CONTENT */
-
-#fullpage {
-  width: calc(100% - 200px);
-  background-color: lightblue;
-}
-
 /* INTRO SECTION */
 
 .intro {
@@ -194,4 +191,12 @@ h3 {
       }
     }
   }
+
+  .fp-controlArrow {
+    display: none;
+  }
+}
+
+.fp-slidesNav {
+  text-align: center;
 }

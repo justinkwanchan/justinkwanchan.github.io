@@ -3,4 +3,6 @@ new fullpage('#fullpage', {
   navigation: true,
   navigationPosition: 'right',
   navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
+  slidesNavigation: true,
+  slidesNavPosition: 'bottom',
 });

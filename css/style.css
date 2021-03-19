@@ -38,6 +38,9 @@ body {
 }
 
 section {
+  position: relative;
+  width: calc(100% - 200px);
+  height: 100vh;
   padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,12 +154,6 @@ h3 {
   border: none;
 }
 
-/* CONTENT */
-#fullpage {
-  width: calc(100% - 200px);
-  background-color: lightblue;
-}
-
 /* INTRO SECTION */
 .intro .intro__img {
   background-color: red;
@@ -188,5 +185,13 @@ h3 {
 .my-projects .portfolio .portfolio__item {
   width: 30%;
   border: 1px solid black;
+}
+
+.my-projects .fp-controlArrow {
+  display: none;
+}
+
+.fp-slidesNav {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

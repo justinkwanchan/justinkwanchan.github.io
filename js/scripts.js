@@ -28,3 +28,25 @@ const titles = [
 ];
 
 projectSlides.forEach((slide, index) => (slide.textContent = titles[index]));
+
+/* Project slide change */
+const observer = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    if (mutation.attributeName === 'class') {
+      const className = mutation.target.classList[0].split('-');
+      const slide = Number.parseInt(className[className.length - 1]) + 1;
+
+      document
+        .querySelectorAll(`.fp-slidesNav ul li a`)
+        .forEach(element => element.classList.remove('project-slide'));
+
+      document
+        .querySelector(`.fp-slidesNav ul li:nth-child(${slide}) a`)
+        .classList.add('project-slide');
+    }
+  });
+});
+
+observer.observe(document.querySelector('body'), {
+  attributes: true,
+});

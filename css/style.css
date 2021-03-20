@@ -228,6 +228,7 @@ h3 {
   height: 2.5em;
   padding-left: 50px;
   text-align: center;
+  color: var(--clr-dark);
   -webkit-transition: -webkit-transform 400ms ease 0s;
   transition: -webkit-transform 400ms ease 0s;
   transition: transform 400ms ease 0s;
@@ -244,6 +245,10 @@ h3 {
   border-left: 30px solid lightgrey;
   border-top: 1.25em solid transparent;
   border-bottom: 1.25em solid transparent;
+}
+
+.fp-slidesNav ul li a:active {
+  color: var(--clr-dark);
 }
 
 .fp-slidesNav ul li a span {

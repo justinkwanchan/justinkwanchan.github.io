@@ -224,6 +224,7 @@ h3 {
         height: 2.5em;
         padding-left: 50px;
         text-align: center;
+        color: var(--clr-dark);
         transition: transform 400ms ease 0s;
 
         &:before {
@@ -238,6 +239,10 @@ h3 {
           border-bottom: 1.25em solid transparent;
         }
 
+        &:active {
+          color: var(--clr-dark);
+        }
+
         span {
           all: unset;
           margin: 0 !important;
@@ -245,11 +250,6 @@ h3 {
           width: auto !important;
         }
       }
-
-      // &:focus,
-      // &:hover {
-      //   margin: 15px 15px 0;
-      // }
     }
   }
 }

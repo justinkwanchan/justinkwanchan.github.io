@@ -228,6 +228,10 @@ h3 {
   height: 2.5em;
   padding-left: 50px;
   text-align: center;
+  -webkit-transition: -webkit-transform 400ms ease 0s;
+  transition: -webkit-transform 400ms ease 0s;
+  transition: transform 400ms ease 0s;
+  transition: transform 400ms ease 0s, -webkit-transform 400ms ease 0s;
 }
 
 .fp-slidesNav ul li a:before {
@@ -250,13 +254,6 @@ h3 {
 }
 
 .project-slide {
-  -webkit-transition: -webkit-transform 400ms ease 0s;
-  transition: -webkit-transform 400ms ease 0s;
-  transition: transform 400ms ease 0s;
-  transition: transform 400ms ease 0s, -webkit-transform 400ms ease 0s;
-}
-
-.project-slide.active {
   -webkit-transform: translateX(30px);
           transform: translateX(30px);
 }

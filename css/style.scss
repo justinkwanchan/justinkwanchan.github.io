@@ -224,7 +224,7 @@ h3 {
         height: 2.5em;
         padding-left: 50px;
         text-align: center;
-        // transition: transform 400ms ease 0s;
+        transition: transform 400ms ease 0s;
 
         &:before {
           content: '';
@@ -237,10 +237,6 @@ h3 {
           border-top: 1.25em solid transparent;
           border-bottom: 1.25em solid transparent;
         }
-
-        // &.active {
-        //   transform: translateX(30px);
-        // }
 
         span {
           all: unset;
@@ -259,9 +255,5 @@ h3 {
 }
 
 .project-slide {
-  transition: transform 400ms ease 0s;
-
-  &.active {
-    transform: translateX(30px);
-  }
+  transform: translateX(30px);
 }

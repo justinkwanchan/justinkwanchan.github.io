@@ -197,11 +197,11 @@ h3 {
 
 .fp-slidesNav {
   text-align: center;
-  bottom: -10px !important;
+  bottom: -30px !important;
 }
 
 .fp-slidesNav ul {
-  margin-left: -150px;
+  margin-left: -160px;
 }
 
 .fp-slidesNav ul li {
@@ -213,6 +213,7 @@ h3 {
 }
 
 .fp-slidesNav ul li a {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,11 +223,32 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightgrey;
-  width: 220px;
+  background: lightgrey;
+  width: 240px;
   height: 2.5em;
   padding-left: 50px;
   text-align: center;
+  -webkit-transition: -webkit-transform 400ms ease 0s;
+  transition: -webkit-transform 400ms ease 0s;
+  transition: transform 400ms ease 0s;
+  transition: transform 400ms ease 0s, -webkit-transform 400ms ease 0s;
+}
+
+.fp-slidesNav ul li a:before {
+  content: '';
+  position: absolute;
+  right: -29px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid lightgrey;
+  border-top: 1.25em solid transparent;
+  border-bottom: 1.25em solid transparent;
+}
+
+.fp-slidesNav ul li a:focus {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .fp-slidesNav ul li a span {

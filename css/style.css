@@ -54,6 +54,10 @@ section {
           align-items: center;
 }
 
+.section {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -193,17 +197,42 @@ h3 {
 
 .fp-slidesNav {
   text-align: center;
+  bottom: -10px !important;
+}
+
+.fp-slidesNav ul {
+  margin-left: -150px;
 }
 
 .fp-slidesNav ul li {
-  width: 50px;
-  height: 50px;
-  margin: 15px;
+  margin: 15px 15px -20px;
+  width: 70px;
+  height: 60px;
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
 }
 
+.fp-slidesNav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgrey;
+  width: 220px;
+  height: 2.5em;
+  padding-left: 50px;
+  text-align: center;
+}
+
 .fp-slidesNav ul li a span {
   all: unset;
+  margin: 0 !important;
+  height: auto !important;
+  width: auto !important;
 }
 /*# sourceMappingURL=style.css.map */

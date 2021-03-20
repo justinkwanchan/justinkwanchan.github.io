@@ -11,3 +11,21 @@ const projects = document.getElementsByClassName('portfolio__item');
 for (let i = 0; i < projects.length; i++) {
   projects[i].addEventListener('click', () => fullpage_api.moveTo(3, i + 1));
 }
+
+// Add project titles to project slide navigation
+
+const projectSlides = document.querySelectorAll(
+  '.fp-slidesNav ul li a span.fp-sr-only'
+);
+
+const titles = [
+  'Index',
+  'HelpMeHelpYou',
+  'Jungle',
+  'Scheduler',
+  'Wiki Map',
+  'Tweeter',
+  'TinyApp',
+];
+
+projectSlides.forEach((slide, index) => (slide.textContent = titles[index]));

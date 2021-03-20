@@ -194,4 +194,16 @@ h3 {
 .fp-slidesNav {
   text-align: center;
 }
+
+.fp-slidesNav ul li {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.fp-slidesNav ul li a span {
+  all: unset;
+}
 /*# sourceMappingURL=style.css.map */

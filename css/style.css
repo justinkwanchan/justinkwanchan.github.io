@@ -195,6 +195,10 @@ h3 {
   display: none;
 }
 
+.my-projects .slide .project-image {
+  width: 50%;
+}
+
 .fp-slidesNav {
   text-align: center;
   bottom: -30px !important;

@@ -6,6 +6,7 @@
 - Add favicon
 - Find font family
 - Find colour theme
+- Talk about challenges of projects including this portfolio
 
 # Sections
 
@@ -41,3 +42,8 @@
 ## Layout
 
 - Responsive for mobile
+
+## Portfolio Challenges
+
+- Idea for design
+- Working with fullPage - FullPage inserts elements into the DOM at runtime, so trying to select them for styling took a bit of extra work. Some of the elements also come with pre-loaded styles with high priorities, so changing them / overwriting them was sometimes challenging.

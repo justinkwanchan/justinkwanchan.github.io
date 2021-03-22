@@ -202,11 +202,31 @@ h3 {
 
   .project-slide {
     display: flex;
-    .project-image {
-      background-color: lightpink;
-      object-fit: contain;
-      max-width: 50%;
-      height: auto;
+    flex-direction: column;
+
+    .project-title {
+      // style
+    }
+
+    .project-content {
+      display: flex;
+
+      .project-image {
+        background-color: lightpink;
+        object-fit: contain;
+        max-width: 50%;
+        height: auto;
+      }
+
+      .project-text {
+        .project-description {
+          // style
+        }
+
+        .project-tech-stack {
+          // style
+        }
+      }
     }
   }
 }

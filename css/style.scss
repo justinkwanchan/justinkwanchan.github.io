@@ -203,9 +203,10 @@ h3 {
   .project-slide {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .project-title {
-      // style
+      margin: 1em 0 2em;
     }
 
     .project-content {
@@ -216,15 +217,31 @@ h3 {
         object-fit: contain;
         max-width: 50%;
         height: auto;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
       }
 
       .project-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 3em;
+        width: 100%;
+
         .project-description {
           // style
         }
 
         .project-tech-stack {
-          // style
+          p {
+            width: 30%;
+            padding-bottom: 1em;
+            border-bottom: 1px solid lightgrey;
+            text-align: center;
+          }
+
+          ul {
+            margin-left: 2em;
+          }
         }
       }
     }

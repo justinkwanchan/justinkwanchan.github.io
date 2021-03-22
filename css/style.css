@@ -203,6 +203,13 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-projects .project-slide .project-title {
+  margin: 1em 0 2em;
 }
 
 .my-projects .project-slide .project-content {
@@ -217,6 +224,34 @@ h3 {
      object-fit: contain;
   max-width: 50%;
   height: auto;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+.my-projects .project-slide .project-content .project-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 3em;
+  width: 100%;
+}
+
+.my-projects .project-slide .project-content .project-text .project-tech-stack p {
+  width: 30%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid lightgrey;
+  text-align: center;
+}
+
+.my-projects .project-slide .project-content .project-text .project-tech-stack ul {
+  margin-left: 2em;
 }
 
 .fp-slidesNav {

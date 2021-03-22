@@ -200,9 +200,13 @@ h3 {
     display: none;
   }
 
-  .slide {
+  .project-slide {
+    display: flex;
     .project-image {
-      width: 50%;
+      background-color: lightpink;
+      object-fit: contain;
+      max-width: 50%;
+      height: auto;
     }
   }
 }

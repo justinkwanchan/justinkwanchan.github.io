@@ -41,7 +41,6 @@ body {
 
 section {
   position: relative;
-  width: calc(100% - 200px);
   height: 100vh;
   padding: 2em;
   display: flex;
@@ -184,19 +183,60 @@ h3 {
 /* PROJECTS SECTION */
 
 .my-projects {
-  // background-color: lightblue;
-  .portfolio {
+  display: flex;
+  align-content: center;
+  // width: 100%;
+
+  .slide {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    width: 80%;
-    height: 100%;
+    justify-content: center;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      '1x1 1x2 1x3'
+      '2x1 2x2 2x3';
+    row-gap: 1.5em;
+    column-gap: 2.5em;
+    width: 58%;
+    max-height: 60%;
+
+    .grid-1x1 {
+      grid-area: 1x1;
+    }
+    .grid-1x2 {
+      grid-area: 1x2;
+    }
+    .grid-1x3 {
+      grid-area: 1x3;
+    }
+    .grid-2x1 {
+      grid-area: 2x1;
+    }
+    .grid-2x2 {
+      grid-area: 2x2;
+    }
+    .grid-2x3 {
+      grid-area: 2x3;
+    }
 
     .portfolio__item {
-      width: 30%;
+      // width: 80%;
+      text-decoration: none;
+      color: inherit;
+
       .portfolio__img {
-        box-shadow: 0 3px 20px -3px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
+      }
+
+      .portfolio__item-description {
+        border: 1px solid lightgrey;
+        border-top: 0;
+        margin: 0;
+        padding: 1em;
       }
     }
   }

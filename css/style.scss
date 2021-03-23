@@ -249,6 +249,23 @@ h3 {
             margin-left: 2em;
           }
         }
+
+        .project-links {
+          a {
+            text-decoration: none;
+            color: inherit;
+            background-color: var(--clr-accent);
+            padding: 0.7em;
+            border-radius: 0.5em;
+            transition: 50ms linear 0s;
+
+            &:hover,
+            &:focus {
+              color: var(--clr-accent);
+              background-color: var(--clr-dark);
+            }
+          }
+        }
       }
     }
   }

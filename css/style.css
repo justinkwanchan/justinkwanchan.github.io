@@ -266,6 +266,21 @@ h3 {
   margin-left: 2em;
 }
 
+.my-projects .project-slide .project-content .project-text .project-links a {
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--clr-accent);
+  padding: 0.7em;
+  border-radius: 0.5em;
+  -webkit-transition: 50ms linear 0s;
+  transition: 50ms linear 0s;
+}
+
+.my-projects .project-slide .project-content .project-text .project-links a:hover, .my-projects .project-slide .project-content .project-text .project-links a:focus {
+  color: var(--clr-accent);
+  background-color: var(--clr-dark);
+}
+
 .fp-slidesNav {
   text-align: center;
   bottom: -30px !important;

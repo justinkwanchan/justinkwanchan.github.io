@@ -183,10 +183,6 @@ h3 {
 /* PROJECTS SECTION */
 
 .my-projects {
-  display: flex;
-  align-content: center;
-  // width: 100%;
-
   .slide {
     display: flex;
     justify-content: center;
@@ -194,15 +190,14 @@ h3 {
 
   .portfolio {
     display: grid;
-    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       '1x1 1x2 1x3'
       '2x1 2x2 2x3';
     row-gap: 1.5em;
     column-gap: 2.5em;
-    width: 58%;
-    max-height: 60%;
+    width: 55%;
+    max-height: 0;
 
     .grid-1x1 {
       grid-area: 1x1;
@@ -224,7 +219,6 @@ h3 {
     }
 
     .portfolio__item {
-      // width: 80%;
       text-decoration: none;
       color: inherit;
 
@@ -246,8 +240,8 @@ h3 {
   }
 
   .project-slide {
-    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 
     .project-title {

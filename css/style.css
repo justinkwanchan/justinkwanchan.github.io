@@ -119,6 +119,26 @@ header {
 }
 
 /* NAVIGATION */
+#fp-nav.fp-right {
+  right: 0;
+}
+
+#fp-nav {
+  height: 100vh;
+  width: 10vw;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1em;
+}
+
 #fp-nav ul li {
   padding-bottom: 85px;
 }

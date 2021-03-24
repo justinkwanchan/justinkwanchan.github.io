@@ -110,7 +110,19 @@ header {
 
 /* NAVIGATION */
 
+#fp-nav.fp-right {
+  right: 0;
+}
+
 #fp-nav {
+  height: 100vh;
+  width: 10vw;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1em;
+
   ul li {
     padding-bottom: 85px;
 

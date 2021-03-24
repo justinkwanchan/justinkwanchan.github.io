@@ -137,6 +137,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 1em;
+  -webkit-box-shadow: -6px 0 30px -6px white;
+          box-shadow: -6px 0 30px -6px white;
 }
 
 #fp-nav ul li {
@@ -331,7 +333,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 7em 0 3em;
+  margin: 0 9em 0 3em;
 }
 
 .my-projects .project-slide .project-content .project-text .project-tech-stack p {

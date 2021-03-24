@@ -131,10 +131,10 @@ header {
       }
 
       color: var(--clr-dark);
-      font-size: 1.5em;
+      font-size: 1.5rem;
       opacity: 1;
       width: auto;
-      top: -23px;
+      top: -20px;
     }
 
     a span,
@@ -176,7 +176,6 @@ header {
 
 .intro {
   .intro__img {
-    // background-color: red;
     max-height: 55%;
     position: absolute;
     bottom: 0;

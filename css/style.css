@@ -147,10 +147,10 @@ header {
 
 #fp-nav ul li .fp-tooltip {
   color: var(--clr-dark);
-  font-size: 1.5em;
+  font-size: 1.5rem;
   opacity: 1;
   width: auto;
-  top: -23px;
+  top: -20px;
 }
 
 #fp-nav ul li .fp-tooltip.fp-right {

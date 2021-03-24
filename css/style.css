@@ -40,7 +40,6 @@ body {
 section {
   position: relative;
   height: 100vh;
-  padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +87,6 @@ h3 {
 
 .section__title {
   margin-bottom: 0.25em;
-  text-align: center;
 }
 
 .section__title--intro {
@@ -98,13 +96,27 @@ h3 {
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
-  text-align: center;
+  font-family: var(--ff-secondary);
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
-  font-family: var(--ff-secondary);
-  margin-bottom: 1em;
+/* PAGE TITLES */
+header {
+  background-color: grey;
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* NAVIGATION */
@@ -188,50 +200,49 @@ h3 {
 .my-projects .portfolio {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: '1x1 1x2 1x3' '2x1 2x2 2x3';
-  row-gap: 1.5em;
-  -webkit-column-gap: 2.5em;
-          column-gap: 2.5em;
-  width: 55%;
-  max-height: 0;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: 'a b c' 'e f g';
+  gap: 1.5em 2.5em;
+  max-width: 52%;
+  height: calc(97% - 150px);
+  overflow: hidden auto;
 }
 
 .my-projects .portfolio .grid-1x1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: 1x1;
+  grid-area: a;
 }
 
 .my-projects .portfolio .grid-1x2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: 1x2;
+  grid-area: b;
 }
 
 .my-projects .portfolio .grid-1x3 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
-  grid-area: 1x3;
+  grid-area: c;
 }
 
 .my-projects .portfolio .grid-2x1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: 2x1;
+  grid-area: e;
 }
 
 .my-projects .portfolio .grid-2x2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: 2x2;
+  grid-area: f;
 }
 
 .my-projects .portfolio .grid-2x3 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
-  grid-area: 2x3;
+  grid-area: g;
 }
 
 .my-projects .portfolio .portfolio__item {
@@ -330,16 +341,16 @@ h3 {
   background-color: var(--clr-dark);
 }
 
-.fp-slidesNav {
+.fp-slidesNav.fp-bottom {
   text-align: center;
-  bottom: -30px !important;
+  bottom: -30px;
 }
 
-.fp-slidesNav ul {
+.fp-slidesNav.fp-bottom ul {
   margin-left: -160px;
 }
 
-.fp-slidesNav ul li {
+.fp-slidesNav.fp-bottom ul li {
   margin: 15px 15px -20px;
   width: 70px;
   height: 60px;
@@ -347,7 +358,7 @@ h3 {
           transform: rotate(-40deg);
 }
 
-.fp-slidesNav ul li a {
+.fp-slidesNav.fp-bottom ul li a {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,7 +381,7 @@ h3 {
   transition: transform 400ms ease 0s, -webkit-transform 400ms ease 0s;
 }
 
-.fp-slidesNav ul li a:before {
+.fp-slidesNav.fp-bottom ul li a:before {
   content: '';
   position: absolute;
   right: -29px;
@@ -382,11 +393,11 @@ h3 {
   border-bottom: 1.25em solid transparent;
 }
 
-.fp-slidesNav ul li a:active {
+.fp-slidesNav.fp-bottom ul li a:active {
   color: var(--clr-dark);
 }
 
-.fp-slidesNav ul li a span {
+.fp-slidesNav.fp-bottom ul li a span {
   all: unset;
   margin: 0 !important;
   height: auto !important;

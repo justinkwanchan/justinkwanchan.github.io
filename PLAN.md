@@ -7,6 +7,8 @@
 - Find font family
 - Find colour theme
 - Talk about challenges of projects including this portfolio
+- Refactor
+  - Consolidate div.section and section
 
 # Sections
 

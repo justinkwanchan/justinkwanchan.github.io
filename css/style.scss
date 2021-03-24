@@ -42,7 +42,7 @@ body {
 section {
   position: relative;
   height: 100vh;
-  padding: 2em;
+  // padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +84,6 @@ h3 {
 
 .section__title {
   margin-bottom: 0.25em;
-  text-align: center;
 }
 
 .section__title--intro {
@@ -94,13 +93,19 @@ h3 {
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
-  text-align: center;
+  font-family: var(--ff-secondary);
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
-  font-family: var(--ff-secondary);
-  margin-bottom: 1em;
+/* PAGE TITLES */
+
+header {
+  background-color: grey;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* NAVIGATION */
@@ -190,32 +195,32 @@ h3 {
 
   .portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      '1x1 1x2 1x3'
-      '2x1 2x2 2x3';
-    row-gap: 1.5em;
-    column-gap: 2.5em;
-    width: 55%;
-    max-height: 0;
+      'a b c'
+      'e f g';
+    gap: 1.5em 2.5em;
+    max-width: 52%;
+    height: calc(97% - 150px);
+    overflow: hidden auto;
 
     .grid-1x1 {
-      grid-area: 1x1;
+      grid-area: a;
     }
     .grid-1x2 {
-      grid-area: 1x2;
+      grid-area: b;
     }
     .grid-1x3 {
-      grid-area: 1x3;
+      grid-area: c;
     }
     .grid-2x1 {
-      grid-area: 2x1;
+      grid-area: e;
     }
     .grid-2x2 {
-      grid-area: 2x2;
+      grid-area: f;
     }
     .grid-2x3 {
-      grid-area: 2x3;
+      grid-area: g;
     }
 
     .portfolio__item {
@@ -305,9 +310,9 @@ h3 {
   }
 }
 
-.fp-slidesNav {
+.fp-slidesNav.fp-bottom {
   text-align: center;
-  bottom: -30px !important;
+  bottom: -30px;
 
   ul {
     margin-left: -160px;

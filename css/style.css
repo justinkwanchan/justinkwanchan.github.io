@@ -361,6 +361,10 @@ header {
   background-color: var(--clr-dark);
 }
 
+.my-projects .project-slide .project-content .project-text .project-links a i {
+  margin-right: 0.4em;
+}
+
 .fp-slidesNav.fp-bottom {
   text-align: center;
   bottom: -30px;

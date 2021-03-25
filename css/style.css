@@ -13,7 +13,7 @@
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
-  --fs-h1: 3rem;
+  --fs-h1: 8.15rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
@@ -21,7 +21,7 @@
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5rem;
+    --fs-h1: 8.5rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
@@ -80,6 +80,8 @@ h3 {
 
 h1 {
   font-size: var(--fs-h1);
+  font-family: 'Kite One', sans-serif;
+  line-height: 0.7;
 }
 
 h2 {
@@ -198,15 +200,12 @@ header {
 /* INTRO SECTION */
 .intro h1 {
   position: relative;
-  font-family: 'Kite One', sans-serif;
-  font-size: 130px;
-  line-height: 0.7;
 }
 
 .intro h1:before, .intro h1:after {
   position: absolute;
   font-size: 0.7em;
-  color: lightgrey;
+  color: #d3d3d3;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
@@ -223,26 +222,32 @@ header {
   right: -2.5em;
 }
 
-.intro p {
+.intro h1 p {
   margin: 0;
 }
 
-.intro p .intro__first-name-highlight {
+.intro h1 p .intro__first-name-highlight {
   color: red;
 }
 
-.intro p.intro__last-name {
+.intro h1 p.intro__last-name {
   margin-left: 0.4em;
 }
 
-.intro p.intro__last-name .intro__last-name-highlight {
+.intro h1 p.intro__last-name .intro__last-name-highlight {
   color: red;
+}
+
+.intro .section__subtitle--intro {
+  font-size: 3rem;
+  margin-left: 6em;
+  color: #585858;
 }
 
 .intro .intro__img {
   max-height: 55%;
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
 }
 
 @media (min-width: 600px) {
@@ -252,7 +257,7 @@ header {
     margin-right: 50%;
   }
   .intro .intro__img {
-    right: 0;
+    right: 400px;
   }
 }
 
@@ -320,7 +325,7 @@ header {
 }
 
 .my-projects .portfolio .portfolio__item .portfolio__item-description {
-  border: 1px solid lightgrey;
+  border: 1px solid #d3d3d3;
   border-top: 0;
   margin: 0;
   padding: 1em;
@@ -377,7 +382,7 @@ header {
 .my-projects .project-slide .project-content .project-text .project-tech-stack p {
   width: 30%;
   padding-bottom: 1em;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #d3d3d3;
   text-align: center;
 }
 
@@ -430,7 +435,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: lightgrey;
+  background: #d3d3d3;
   width: 240px;
   height: 2.5em;
   padding-left: 50px;
@@ -449,7 +454,7 @@ header {
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 30px solid lightgrey;
+  border-left: 30px solid #d3d3d3;
   border-top: 1.25em solid transparent;
   border-bottom: 1.25em solid transparent;
 }

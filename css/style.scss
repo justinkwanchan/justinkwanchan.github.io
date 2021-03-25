@@ -180,6 +180,27 @@ header {
 /* INTRO SECTION */
 
 .intro {
+  h1 {
+    font-family: 'Kite One', sans-serif;
+    font-size: 120px;
+    line-height: 0.7;
+  }
+
+  p {
+    margin: 0;
+
+    .intro__first-name-highlight {
+      color: red;
+    }
+
+    &.intro__last-name {
+      margin-left: 0.4em;
+
+      .intro__last-name-highlight {
+        color: red;
+      }
+    }
+  }
   .intro__img {
     max-height: 55%;
     position: absolute;

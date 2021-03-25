@@ -196,6 +196,28 @@ header {
 }
 
 /* INTRO SECTION */
+.intro h1 {
+  font-family: 'Kite One', sans-serif;
+  font-size: 120px;
+  line-height: 0.7;
+}
+
+.intro p {
+  margin: 0;
+}
+
+.intro p .intro__first-name-highlight {
+  color: red;
+}
+
+.intro p.intro__last-name {
+  margin-left: 0.4em;
+}
+
+.intro p.intro__last-name .intro__last-name-highlight {
+  color: red;
+}
+
 .intro .intro__img {
   max-height: 55%;
   position: absolute;

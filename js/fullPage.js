@@ -6,4 +6,5 @@ new fullpage('#fullpage', {
   navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
   slidesNavigation: true,
   slidesNavPosition: 'bottom',
+  responsiveHeight: 600,
 });

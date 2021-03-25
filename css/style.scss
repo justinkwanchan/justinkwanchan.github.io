@@ -181,9 +181,30 @@ header {
 
 .intro {
   h1 {
+    position: relative;
     font-family: 'Kite One', sans-serif;
-    font-size: 120px;
+    font-size: 130px;
     line-height: 0.7;
+
+    &:before,
+    &:after {
+      position: absolute;
+      font-size: 0.7em;
+      color: lightgrey;
+      transform: rotate(-30deg);
+    }
+
+    &:before {
+      content: '<h1>';
+      top: -0.9em;
+      left: -2.5em;
+    }
+
+    &:after {
+      content: '</h1>';
+      bottom: -0.9em;
+      right: -2.5em;
+    }
   }
 
   p {

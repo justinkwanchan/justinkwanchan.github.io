@@ -65,6 +65,11 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* TYPOGRAPHY */
 h1,
 h2,
@@ -266,11 +271,6 @@ header {
   grid-area: g;
 }
 
-.my-projects .portfolio .portfolio__item {
-  text-decoration: none;
-  color: inherit;
-}
-
 .my-projects .portfolio .portfolio__item .portfolio__img {
   -webkit-box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
@@ -281,10 +281,6 @@ header {
   border-top: 0;
   margin: 0;
   padding: 1em;
-}
-
-.my-projects .fp-controlArrow {
-  display: none;
 }
 
 .my-projects .project-slide {
@@ -347,8 +343,6 @@ header {
 }
 
 .my-projects .project-slide .project-content .project-text .project-links a {
-  text-decoration: none;
-  color: inherit;
   background-color: var(--clr-accent);
   padding: 0.7em;
   border-radius: 0.5em;

@@ -1,4 +1,5 @@
 new fullpage('#fullpage', {
+  controlArrows: false,
   verticalCentered: false,
   navigation: true,
   navigationPosition: 'right',

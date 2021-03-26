@@ -218,7 +218,7 @@ header {
 .intro h1:before, .intro h1:after {
   position: absolute;
   font-size: 0.7em;
-  color: #aaaaaa;
+  color: #bbbbbb;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
@@ -267,7 +267,7 @@ header {
   .intro .section__title--intro,
   .intro .section__subtitle--intro {
     margin-top: 10%;
-    margin-right: 50%;
+    margin-right: 47%;
   }
   .intro .intro__img {
     right: 400px;
@@ -293,7 +293,7 @@ header {
   gap: 1.5em 2.5em;
   max-width: 52%;
   height: calc(97% - 150px);
-  overflow: hidden auto;
+  overflow-y: hidden;
 }
 
 .my-projects .portfolio .grid-1x1 {
@@ -332,6 +332,10 @@ header {
   grid-area: g;
 }
 
+.my-projects .portfolio .portfolio__item {
+  position: relative;
+}
+
 .my-projects .portfolio .portfolio__item .portfolio__img {
   -webkit-box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
@@ -342,6 +346,10 @@ header {
   border-top: 0;
   margin: 0;
   padding: 1em;
+}
+
+.my-projects .portfolio .portfolio__item:hover, .my-projects .portfolio .portfolio__item:focus {
+  outline: none;
 }
 
 .my-projects .project-slide {

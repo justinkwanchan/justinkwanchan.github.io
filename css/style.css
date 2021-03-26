@@ -268,28 +268,36 @@ p {
   }
 }
 
-/* ABOUT SECTION */
-.about-me {
+/* ABOUT + CONTACT SECTIONS */
+.about-me,
+.contact-me {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 13% 0 0 15%;
 }
 
-.about-me .about-me__body {
+.about-me .about-me__body,
+.about-me .contact-me__body,
+.contact-me .about-me__body,
+.contact-me .contact-me__body {
   font-size: 1.5rem;
-}
-
-.about-me .about-me__body p {
   color: var(--clr-body-text);
-  padding: 0;
-  margin: 0;
 }
 
-.about-me .about-me__body img {
+.about-me .about-me__body img,
+.about-me .contact-me__body img,
+.contact-me .about-me__body img,
+.contact-me .contact-me__body img {
   position: absolute;
   bottom: -25px;
   right: 20%;
+}
+
+/* ABOUT SECTION */
+.about-me__body p {
+  padding: 0;
+  margin: 0;
 }
 
 /* PROJECTS SECTION */

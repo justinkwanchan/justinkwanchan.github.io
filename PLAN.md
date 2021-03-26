@@ -2,7 +2,8 @@
 
 - Find pictures
   - Home / Intro
-  - About?
+  - About
+  - Contact
 - Add favicon
 - Find font family
 - Find colour theme
@@ -44,6 +45,15 @@
 ## Layout
 
 - Responsive for mobile
+
+## Fonts
+
+1. Split the content up into groups
+2. Increase contrast through font-size
+3. Increase contrast through font-weight
+4. Increase contrast through color
+5. Increase the line-height of the body
+6. Decrease the line-height of large text
 
 ## Portfolio Challenges
 

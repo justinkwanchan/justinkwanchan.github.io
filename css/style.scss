@@ -5,8 +5,9 @@
 }
 
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Source Code Pro', monospace;
+  --ff-nav: 'Poppins', sans-serif;
 
   --fw-reg: 300;
   --fw-bold: 900;
@@ -95,10 +96,16 @@ h1 {
 
 h2 {
   font-size: var(--fs-h2);
+  font-family: 'Kiwi Maru', serif;
+  font-weight: 400;
 }
 
 h3 {
   font-size: var(--fs-h3);
+}
+
+p {
+  max-width: 50ch;
 }
 
 .section__title {
@@ -150,6 +157,7 @@ header {
         right: 35px;
       }
 
+      font-family: var(--ff-nav);
       color: var(--clr-dark);
       font-size: 1.5rem;
       opacity: 1;
@@ -258,6 +266,13 @@ header {
     .intro__img {
       right: 400px;
     }
+  }
+}
+
+/* ABOUT SECTION */
+
+.about-me {
+  .section__title--about {
   }
 }
 
@@ -410,6 +425,7 @@ header {
         height: 2.5em;
         padding-left: 50px;
         text-align: center;
+        font-family: var(--ff-nav);
         color: var(--clr-light);
         transition: transform 400ms ease 0s;
 

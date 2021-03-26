@@ -6,8 +6,9 @@
 }
 
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Source Code Pro', monospace;
+  --ff-nav: 'Poppins', sans-serif;
   --fw-reg: 300;
   --fw-bold: 900;
   --clr-light: #fff;
@@ -99,10 +100,16 @@ h1 {
 
 h2 {
   font-size: var(--fs-h2);
+  font-family: 'Kiwi Maru', serif;
+  font-weight: 400;
 }
 
 h3 {
   font-size: var(--fs-h3);
+}
+
+p {
+  max-width: 50ch;
 }
 
 .section__title {
@@ -166,6 +173,7 @@ header {
 }
 
 #fp-nav ul li .fp-tooltip {
+  font-family: var(--ff-nav);
   color: var(--clr-dark);
   font-size: 1.5rem;
   opacity: 1;
@@ -274,6 +282,7 @@ header {
   }
 }
 
+/* ABOUT SECTION */
 /* PROJECTS SECTION */
 .my-projects .slide {
   display: -webkit-box;
@@ -461,6 +470,7 @@ header {
   height: 2.5em;
   padding-left: 50px;
   text-align: center;
+  font-family: var(--ff-nav);
   color: var(--clr-light);
   -webkit-transition: -webkit-transform 400ms ease 0s;
   transition: -webkit-transform 400ms ease 0s;

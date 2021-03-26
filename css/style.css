@@ -7,7 +7,7 @@
 
 :root {
   --ff-primary: 'Roboto', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
+  --ff-secondary: 'Kiwi Maru', serif;
   --ff-nav: 'Poppins', sans-serif;
   --fw-reg: 300;
   --fw-bold: 900;
@@ -101,7 +101,7 @@ h1 {
 h2 {
   font-size: var(--fs-h2);
   font-family: 'Kiwi Maru', serif;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 h3 {

@@ -409,15 +409,16 @@ header {
 
         .project-links {
           a {
-            background-color: var(--clr-accent);
             padding: 0.7em;
             border-radius: 0.5em;
             transition: 50ms linear 0s;
+            color: var(--clr-accent);
+            background-color: var(--clr-dark);
 
             &:hover,
             &:focus {
-              color: var(--clr-accent);
-              background-color: var(--clr-dark);
+              color: var(--clr-dark);
+              background-color: var(--clr-accent);
             }
 
             i {
@@ -482,4 +483,52 @@ header {
 
 .project-slide {
   transform: translateX(30px);
+}
+
+/* CONTACT SECTION */
+
+.contact-me {
+  .section__subtitle--contact {
+    display: inline-block;
+    margin-top: 0.25em;
+    margin-right: 0.25em;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 21rem;
+    margin: 0.5em 0 3em;
+
+    i {
+      font-size: 6rem;
+      color: var(--clr-dark);
+      transition: 50ms linear 0s;
+
+      &:hover,
+      &:focus {
+        color: var(--clr-accent);
+        outline: none;
+      }
+    }
+  }
+
+  .contact-me__resume {
+    a {
+      color: var(--clr-background);
+      background-color: var(--clr-dark);
+      padding: 0.6em;
+      border-radius: 0.5em;
+      transition: 50ms linear 0s;
+
+      &:hover,
+      &:focus {
+        background-color: var(--clr-accent);
+      }
+    }
+  }
+
+  img {
+    transform: scaleX(-1);
+  }
 }

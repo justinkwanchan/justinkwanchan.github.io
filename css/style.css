@@ -438,16 +438,17 @@ p {
 }
 
 .my-projects .project-slide .project-content .project-text .project-links a {
-  background-color: var(--clr-accent);
   padding: 0.7em;
   border-radius: 0.5em;
   -webkit-transition: 50ms linear 0s;
   transition: 50ms linear 0s;
+  color: var(--clr-accent);
+  background-color: var(--clr-dark);
 }
 
 .my-projects .project-slide .project-content .project-text .project-links a:hover, .my-projects .project-slide .project-content .project-text .project-links a:focus {
-  color: var(--clr-accent);
-  background-color: var(--clr-dark);
+  color: var(--clr-dark);
+  background-color: var(--clr-accent);
 }
 
 .my-projects .project-slide .project-content .project-text .project-links a i {
@@ -517,5 +518,53 @@ p {
 .project-slide {
   -webkit-transform: translateX(30px);
           transform: translateX(30px);
+}
+
+/* CONTACT SECTION */
+.contact-me .section__subtitle--contact {
+  display: inline-block;
+  margin-top: 0.25em;
+  margin-right: 0.25em;
+}
+
+.contact-me .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 21rem;
+  margin: 0.5em 0 3em;
+}
+
+.contact-me .social-links i {
+  font-size: 6rem;
+  color: var(--clr-dark);
+  -webkit-transition: 50ms linear 0s;
+  transition: 50ms linear 0s;
+}
+
+.contact-me .social-links i:hover, .contact-me .social-links i:focus {
+  color: var(--clr-accent);
+  outline: none;
+}
+
+.contact-me .contact-me__resume a {
+  color: var(--clr-background);
+  background-color: var(--clr-dark);
+  padding: 0.6em;
+  border-radius: 0.5em;
+  -webkit-transition: 50ms linear 0s;
+  transition: 50ms linear 0s;
+}
+
+.contact-me .contact-me__resume a:hover, .contact-me .contact-me__resume a:focus {
+  background-color: var(--clr-accent);
+}
+
+.contact-me img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 /*# sourceMappingURL=style.css.map */

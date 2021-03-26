@@ -7,6 +7,7 @@
 :root {
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Kiwi Maru', serif;
+  --ff-intro-title: 'Kite One', sans-serif;
   --ff-nav: 'Poppins', sans-serif;
 
   --fw-reg: 300;
@@ -90,14 +91,14 @@ h3 {
 
 h1 {
   font-size: var(--fs-h1);
-  font-family: 'Kite One', sans-serif;
+  font-family: var(--ff-intro-title);
   line-height: 0.7;
 }
 
 h2 {
   font-size: var(--fs-h2);
-  font-family: 'Kiwi Maru', serif;
-  font-weight: 900;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
 }
 
 h3 {

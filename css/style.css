@@ -7,7 +7,7 @@
 
 :root {
   --ff-primary: 'Roboto', sans-serif;
-  --ff-secondary: 'Kiwi Maru', serif;
+  --ff-title: 'Kiwi Maru', serif;
   --ff-intro-title: 'Kite One', sans-serif;
   --ff-nav: 'Poppins', sans-serif;
   --fw-reg: 300;
@@ -103,17 +103,17 @@ h1 {
 
 h2 {
   font-size: var(--fs-h2);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-title);
   font-weight: var(--fw-bold);
 }
 
 h3 {
   font-size: var(--fs-h3);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-title);
 }
 
 p {
-  max-width: 50ch;
+  max-width: 60ch;
 }
 
 .section__title {
@@ -128,10 +128,9 @@ p {
   margin: 1em 0;
   font-size: var(--fs-subtitle);
   color: var(--clr-body-text);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-title);
 }
 
-/* PAGE TITLES */
 /* NAVIGATION */
 #fp-nav.fp-right {
   right: 0;
@@ -234,7 +233,8 @@ p {
   margin: 0;
 }
 
-.intro h1 p .intro__first-name-highlight {
+.intro h1 p .intro__first-name-highlight,
+.intro h1 p .intro__last-name-highlight {
   color: var(--clr-accent);
 }
 
@@ -242,12 +242,8 @@ p {
   margin-left: 0.4em;
 }
 
-.intro h1 p.intro__last-name .intro__last-name-highlight {
-  color: var(--clr-accent);
-}
-
 .intro .section__subtitle--intro {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-title);
   font-size: 3rem;
   margin-left: 6em;
   color: #585858;
@@ -317,11 +313,11 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 13% 0 0 15%;
+  padding: 12% 0 0 15%;
 }
 
 .my-projects .portfolio {
-  margin-top: 10%;
+  margin-top: 9%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -404,7 +400,7 @@ p {
 }
 
 .my-projects .project-slide .project-title {
-  margin: 1.5em 0;
+  margin: 1.3em 0;
 }
 
 .my-projects .project-slide .project-content {
@@ -453,7 +449,7 @@ p {
   border-radius: 0.5em;
   -webkit-transition: 50ms linear 0s;
   transition: 50ms linear 0s;
-  color: var(--clr-accent);
+  color: var(--clr-light);
   background-color: var(--clr-dark);
 }
 

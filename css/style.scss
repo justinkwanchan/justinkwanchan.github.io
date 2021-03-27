@@ -6,7 +6,7 @@
 
 :root {
   --ff-primary: 'Roboto', sans-serif;
-  --ff-secondary: 'Kiwi Maru', serif;
+  --ff-title: 'Kiwi Maru', serif;
   --ff-intro-title: 'Kite One', sans-serif;
   --ff-nav: 'Poppins', sans-serif;
 
@@ -99,17 +99,17 @@ h1 {
 
 h2 {
   font-size: var(--fs-h2);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-title);
   font-weight: var(--fw-bold);
 }
 
 h3 {
   font-size: var(--fs-h3);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-title);
 }
 
 p {
-  max-width: 50ch;
+  max-width: 60ch;
 }
 
 .section__title {
@@ -124,21 +124,7 @@ p {
   margin: 1em 0;
   font-size: var(--fs-subtitle);
   color: var(--clr-body-text);
-  font-family: var(--ff-secondary);
-}
-
-/* PAGE TITLES */
-
-header {
-  // width: 100%;
-  // height: 20vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // position: relative;
-  // top: 20%;
-  // left: -20%;
+  font-family: var(--ff-title);
 }
 
 /* NAVIGATION */
@@ -237,22 +223,19 @@ header {
     p {
       margin: 0;
 
-      .intro__first-name-highlight {
+      .intro__first-name-highlight,
+      .intro__last-name-highlight {
         color: var(--clr-accent);
       }
 
       &.intro__last-name {
         margin-left: 0.4em;
-
-        .intro__last-name-highlight {
-          color: var(--clr-accent);
-        }
       }
     }
   }
 
   .section__subtitle--intro {
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-title);
     font-size: 3rem;
     margin-left: 6em;
     color: rgb(88, 88, 88);
@@ -318,12 +301,12 @@ header {
       position: absolute;
       top: 0;
       left: 0;
-      padding: 13% 0 0 15%;
+      padding: 12% 0 0 15%;
     }
   }
 
   .portfolio {
-    margin-top: 10%;
+    margin-top: 9%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -381,7 +364,7 @@ header {
     align-items: center;
 
     .project-title {
-      margin: 1.5em 0;
+      margin: 1.3em 0;
     }
 
     .project-content {
@@ -423,7 +406,7 @@ header {
             padding: 0.7em;
             border-radius: 0.5em;
             transition: 50ms linear 0s;
-            color: var(--clr-accent);
+            color: var(--clr-light);
             background-color: var(--clr-dark);
 
             &:hover,

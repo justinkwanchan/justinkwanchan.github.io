@@ -1,21 +1,26 @@
 # To-do
 
+- Add favicon
+- Talk about challenges of projects including this portfolio
+- Refactor
+  - Consolidate div.section and section
+- Change style of rightside nav
+
+# Done
+
 - Find pictures
   - Home / Intro
   - About
   - Contact
-- Add favicon
 - Find font family
+  - Find logo-ish font for name
 - Find colour theme
-- Talk about challenges of projects including this portfolio
-- Refactor
-  - Consolidate div.section and section
 
 # Sections
 
 ## Home
 
-- Find logo-ish font for name
+- Complete
 
 ## About
 
@@ -40,7 +45,7 @@
 
 ## Contact
 
-- Need resume
+- Complete
 
 ## Layout
 
@@ -60,3 +65,4 @@
 - Idea for design
 - Working with fullPage - FullPage inserts elements into the DOM at runtime, so trying to select them for styling took a bit of extra work. Some of the elements also come with pre-loaded styles with high priorities, so changing them / overwriting them was sometimes challenging.
 - Image height and having a parent element's height conform to the size of the images within
+- On the Project index page - implementing a color overlay on each link on hover

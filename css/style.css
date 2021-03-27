@@ -27,7 +27,8 @@
   :root {
     --fs-h1: 8.5rem;
     --fs-h2: 6rem;
-    --fs-h3: 2.2rem;
+    --fs-h3: 4rem;
+    --fs-subtitle: 2.2rem;
     --fs-body: 1.125rem;
   }
 }
@@ -108,6 +109,7 @@ h2 {
 
 h3 {
   font-size: var(--fs-h3);
+  font-family: var(--ff-secondary);
 }
 
 p {
@@ -124,7 +126,7 @@ p {
 
 .section__subtitle {
   margin: 1em 0;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-subtitle);
   color: var(--clr-body-text);
   font-family: var(--ff-secondary);
 }
@@ -302,6 +304,7 @@ p {
 
 /* PROJECTS SECTION */
 .my-projects .slide {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,56 +313,65 @@ p {
           justify-content: center;
 }
 
+.my-projects .slide header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 13% 0 0 15%;
+}
+
 .my-projects .portfolio {
+  margin-top: 10%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: 'a b c' 'e f g';
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: '. . a b' 'c d e f';
   gap: 1.5em 2.5em;
-  max-width: 52%;
-  height: calc(97% - 150px);
+  max-width: 65%;
+  height: calc(77% - 150px);
   overflow-y: hidden;
 }
 
 .my-projects .portfolio .grid-1x1 {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 3;
   grid-area: a;
 }
 
 .my-projects .portfolio .grid-1x2 {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 4;
   grid-area: b;
 }
 
 .my-projects .portfolio .grid-1x3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: c;
 }
 
 .my-projects .portfolio .grid-2x1 {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: e;
+  -ms-grid-column: 2;
+  grid-area: d;
 }
 
 .my-projects .portfolio .grid-2x2 {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: f;
+  -ms-grid-column: 3;
+  grid-area: e;
 }
 
 .my-projects .portfolio .grid-2x3 {
   -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: g;
+  -ms-grid-column: 4;
+  grid-area: f;
 }
 
 .my-projects .portfolio .portfolio__item {
   position: relative;
+  height: auto;
 }
 
 .my-projects .portfolio .portfolio__item .portfolio__img {
@@ -392,8 +404,7 @@ p {
 }
 
 .my-projects .project-slide .project-title {
-  font-size: 2.2rem;
-  margin: 0.5em 0 1.5em;
+  margin: 1.5em 0;
 }
 
 .my-projects .project-slide .project-content {

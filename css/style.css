@@ -113,7 +113,7 @@ h3 {
 }
 
 p {
-  max-width: 60ch;
+  max-width: 55ch;
 }
 
 .section__title {
@@ -282,6 +282,13 @@ p {
 .contact-me .contact-me__body {
   font-size: 1.5rem;
   color: var(--clr-body-text);
+}
+
+.about-me .about-me__body p,
+.about-me .contact-me__body p,
+.contact-me .about-me__body p,
+.contact-me .contact-me__body p {
+  margin-bottom: 1em;
 }
 
 .about-me .about-me__body img,

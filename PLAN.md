@@ -4,7 +4,8 @@
 - Talk about challenges of projects including this portfolio
 - Refactor
   - Consolidate div.section and section
-- Change style of rightside nav
+- Add mobile responsiveness
+- Add French translation
 
 # Done
 
@@ -15,6 +16,7 @@
 - Find font family
   - Find logo-ish font for name
 - Find colour theme
+- Change style of rightside nav
 
 # Sections
 
@@ -46,10 +48,6 @@
 ## Contact
 
 - Complete
-
-## Layout
-
-- Responsive for mobile
 
 ## Fonts
 

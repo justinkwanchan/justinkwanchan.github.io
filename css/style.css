@@ -259,11 +259,11 @@ p {
 @media (min-width: 600px) {
   .intro .section__title--intro,
   .intro .section__subtitle--intro {
-    margin-top: 10%;
-    margin-right: 47%;
+    margin-top: 11%;
+    margin-right: 44%;
   }
   .intro .intro__img {
-    right: 400px;
+    right: 300px;
   }
 }
 

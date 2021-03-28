@@ -1,5 +1,6 @@
 # To-do
 
+- Fix 1px line between nav bars and points
 - Add favicon
 - Talk about challenges of projects including this portfolio
 - Refactor

@@ -146,6 +146,10 @@ p {
   ul li {
     padding-bottom: 58px;
 
+    .fp-tooltip {
+      display: none;
+    }
+
     a {
       position: relative;
       display: flex;
@@ -157,12 +161,13 @@ p {
       color: var(--clr-light);
       background: var(--clr-dark);
       font-family: var(--ff-nav);
+      border-radius: 3px;
       transition: transform 400ms ease 0s;
 
       &:before {
         content: '';
         position: absolute;
-        left: -30px;
+        left: -29px;
         bottom: 0;
         width: 0;
         height: 0;
@@ -450,6 +455,7 @@ p {
         text-align: center;
         font-family: var(--ff-nav);
         color: var(--clr-light);
+        border-radius: 3px;
         transition: transform 400ms ease 0s;
 
         &:before {

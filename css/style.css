@@ -158,6 +158,10 @@ p {
   padding-bottom: 58px;
 }
 
+#fp-nav ul li .fp-tooltip {
+  display: none;
+}
+
 #fp-nav ul li a {
   position: relative;
   display: -webkit-box;
@@ -175,6 +179,7 @@ p {
   color: var(--clr-light);
   background: var(--clr-dark);
   font-family: var(--ff-nav);
+  border-radius: 3px;
   -webkit-transition: -webkit-transform 400ms ease 0s;
   transition: -webkit-transform 400ms ease 0s;
   transition: transform 400ms ease 0s;
@@ -184,7 +189,7 @@ p {
 #fp-nav ul li a:before {
   content: '';
   position: absolute;
-  left: -30px;
+  left: -29px;
   bottom: 0;
   width: 0;
   height: 0;
@@ -512,6 +517,7 @@ p {
   text-align: center;
   font-family: var(--ff-nav);
   color: var(--clr-light);
+  border-radius: 3px;
   -webkit-transition: -webkit-transform 400ms ease 0s;
   transition: -webkit-transform 400ms ease 0s;
   transition: transform 400ms ease 0s;

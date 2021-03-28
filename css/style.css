@@ -254,6 +254,8 @@ p {
   max-height: 55%;
   position: absolute;
   bottom: -20px;
+  -webkit-filter: drop-shadow(-8px 8px 6px #2c2c2c);
+          filter: drop-shadow(-8px 8px 6px #2c2c2c);
 }
 
 @media (min-width: 600px) {
@@ -304,6 +306,11 @@ p {
 .about-me__body p {
   padding: 0;
   margin: 0;
+}
+
+.about-me__body img {
+  -webkit-filter: drop-shadow(4px 8px 11px #2c2c2c);
+          filter: drop-shadow(4px 8px 11px #2c2c2c);
 }
 
 /* PROJECTS SECTION */
@@ -581,5 +588,7 @@ p {
 .contact-me img {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+  -webkit-filter: drop-shadow(7px 12px 4px grey);
+          filter: drop-shadow(7px 12px 4px grey);
 }
 /*# sourceMappingURL=style.css.map */

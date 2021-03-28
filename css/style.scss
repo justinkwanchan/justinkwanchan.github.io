@@ -236,6 +236,7 @@ p {
     max-height: 55%;
     position: absolute;
     bottom: -20px;
+    filter: drop-shadow(-8px 8px 6px rgb(44, 44, 44));
   }
 }
 
@@ -281,6 +282,10 @@ p {
   p {
     padding: 0;
     margin: 0;
+  }
+
+  img {
+    filter: drop-shadow(4px 8px 11px rgb(44, 44, 44));
   }
 }
 
@@ -519,5 +524,6 @@ p {
 
   img {
     transform: scaleX(-1);
+    filter: drop-shadow(7px 12px 4px grey);
   }
 }

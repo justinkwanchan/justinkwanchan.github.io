@@ -133,12 +133,13 @@ p {
 
 /* NAVIGATION */
 #fp-nav.fp-right {
-  right: 260px;
+  right: 0;
+  padding-right: 7em;
 }
 
 #fp-nav {
   height: 100vh;
-  width: 10vw;
+  width: 13vw;
   background-color: var(--clr-background);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,28 +150,31 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: -6px 0 30px -6px var(--clr-background);
-          box-shadow: -6px 0 30px -6px var(--clr-background);
+  -webkit-box-shadow: -6px 0 10px 10px var(--clr-background);
+          box-shadow: -6px 0 10px 10px var(--clr-background);
 }
 
 #fp-nav ul li {
-  padding-bottom: 60px;
-}
-
-#fp-nav ul li .fp-tooltip {
-  display: none;
+  padding-bottom: 58px;
 }
 
 #fp-nav ul li a {
-  background: var(--clr-dark);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 240px;
   height: 2.5em;
-  margin: auto;
-  padding-right: 90px;
-  text-align: center;
-  font-family: var(--ff-nav);
-  border-radius: 0;
+  padding-right: 6.1em;
   color: var(--clr-light);
+  background: var(--clr-dark);
+  font-family: var(--ff-nav);
   -webkit-transition: -webkit-transform 400ms ease 0s;
   transition: -webkit-transform 400ms ease 0s;
   transition: transform 400ms ease 0s;
@@ -180,7 +184,7 @@ p {
 #fp-nav ul li a:before {
   content: '';
   position: absolute;
-  right: 29px;
+  left: -30px;
   bottom: 0;
   width: 0;
   height: 0;

@@ -130,50 +130,39 @@ p {
 /* NAVIGATION */
 
 #fp-nav.fp-right {
-  right: 260px;
+  right: 0;
+  padding-right: 7em;
 }
 
 #fp-nav {
   height: 100vh;
-  width: 10vw;
+  width: 13vw;
   background-color: var(--clr-background);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: -6px 0 30px -6px var(--clr-background);
+  box-shadow: -6px 0 10px 10px var(--clr-background);
 
   ul li {
-    padding-bottom: 60px;
-
-    .fp-tooltip {
-      &.fp-right {
-      }
-      display: none;
-
-      // font-family: var(--ff-nav);
-      // color: var(--clr-light);
-      // font-size: var(--fs-body);
-      // opacity: 1;
-      // width: auto;
-      // top: -20px;
-    }
+    padding-bottom: 58px;
 
     a {
-      background: var(--clr-dark);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 240px;
       height: 2.5em;
-      margin: auto;
-      padding-right: 90px;
-      text-align: center;
-      font-family: var(--ff-nav);
-      border-radius: 0;
+      padding-right: 6.1em;
       color: var(--clr-light);
+      background: var(--clr-dark);
+      font-family: var(--ff-nav);
       transition: transform 400ms ease 0s;
 
       &:before {
         content: '';
         position: absolute;
-        right: 29px;
+        left: -30px;
         bottom: 0;
         width: 0;
         height: 0;
@@ -192,16 +181,6 @@ p {
         height: auto !important;
         width: auto !important;
       }
-    }
-
-    a span,
-    a.active span,
-    &:hover a span,
-    &:hover a.active span {
-    }
-
-    a.active span,
-    &:hover a.active span {
     }
   }
 }

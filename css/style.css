@@ -351,25 +351,26 @@ p {
 
 .my-projects .portfolio .grid-1x1 {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: a;
 }
 
 .my-projects .portfolio .grid-1x2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: b;
 }
 
 .my-projects .portfolio .grid-1x3 {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: c;
 }
 
 .my-projects .portfolio .grid-2x1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: d;
 }
 
@@ -440,28 +441,49 @@ p {
 }
 
 .my-projects .project-slide .project-content .project-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 9em 0 3em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 'a a' 'b c' 'd .';
+  -webkit-column-gap: 1.5em;
+          column-gap: 1.5em;
 }
 
-.my-projects .project-slide .project-content .project-text .project-tech-stack p {
-  width: 30%;
+.my-projects .project-slide .project-content .project-text .project-feature-list p {
   padding-bottom: 1em;
   border-bottom: 1px solid #d3d3d3;
   text-align: center;
 }
 
-.my-projects .project-slide .project-content .project-text .project-tech-stack ul {
+.my-projects .project-slide .project-content .project-text .project-feature-list ul {
   margin-left: 2em;
+}
+
+.my-projects .project-slide .project-content .project-text .project-description {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+}
+
+.my-projects .project-slide .project-content .project-text .project-tech-stack {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: b;
+}
+
+.my-projects .project-slide .project-content .project-text .project-features {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: c;
+}
+
+.my-projects .project-slide .project-content .project-text .project-links {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: d;
 }
 
 .my-projects .project-slide .project-content .project-text .project-links a {

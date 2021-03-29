@@ -384,18 +384,17 @@ p {
       }
 
       .project-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin: 0 9em 0 3em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+          'a a'
+          'b c'
+          'd .';
+        column-gap: 1.5em;
 
-        .project-description {
-          // style
-        }
-
-        .project-tech-stack {
+        .project-feature-list {
           p {
-            width: 30%;
             padding-bottom: 1em;
             border-bottom: 1px solid #d3d3d3;
             text-align: center;
@@ -404,6 +403,22 @@ p {
           ul {
             margin-left: 2em;
           }
+        }
+
+        .project-description {
+          grid-area: a;
+        }
+
+        .project-tech-stack {
+          grid-area: b;
+        }
+
+        .project-features {
+          grid-area: c;
+        }
+
+        .project-links {
+          grid-area: d;
         }
 
         .project-links {

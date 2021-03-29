@@ -60,7 +60,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .section {
@@ -213,7 +212,7 @@ p {
     &:after {
       content: '</h1>';
       bottom: -0.9em;
-      right: -2.5em;
+      left: 4.5em;
     }
 
     p {
@@ -247,11 +246,16 @@ p {
 
 @media (min-width: 600px) {
   .intro {
-    .section__title--intro,
-    .section__subtitle--intro {
-      margin-top: 11%;
-      margin-right: 44%;
+    .section__title--intro {
+      margin-top: 1.6em;
+      margin-left: 16%;
     }
+
+    .section__subtitle--intro {
+      margin-top: 4.3em;
+      margin-left: 30%;
+    }
+
     .intro__img {
       max-width: 45%;
       right: 13%;

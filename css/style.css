@@ -449,21 +449,36 @@ p {
   width: 37%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
       grid-template-areas: 'a a' 'b c' 'd .';
   -webkit-column-gap: 1.5em;
           column-gap: 1.5em;
 }
 
 .my-projects .project-slide .project-content .project-text .project-feature-list p {
-  padding-bottom: 1em;
-  border-bottom: 1px solid #d3d3d3;
-  text-align: center;
+  display: inline-block;
+  width: 70%;
+  margin: 0;
+  font-weight: 500;
 }
 
 .my-projects .project-slide .project-content .project-text .project-feature-list ul {
-  margin-left: 2em;
+  position: relative;
+}
+
+.my-projects .project-slide .project-content .project-text .project-feature-list ul li::marker {
+  font-size: 0.9em;
+}
+
+.my-projects .project-slide .project-content .project-text .project-feature-list ul:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  height: 100%;
+  width: 0;
+  border-left: 3px solid var(--clr-accent);
 }
 
 .my-projects .project-slide .project-content .project-text .project-description {
@@ -490,6 +505,15 @@ p {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: d;
+}
+
+.my-projects .project-slide .project-content .project-text .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .my-projects .project-slide .project-content .project-text .project-links a {

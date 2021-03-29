@@ -389,7 +389,7 @@ p {
         margin: 0 3% 0 0;
         width: 37%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 40% 60%;
         grid-template-areas:
           'a a'
           'b c'
@@ -398,13 +398,28 @@ p {
 
         .project-feature-list {
           p {
-            padding-bottom: 1em;
-            border-bottom: 1px solid #d3d3d3;
-            text-align: center;
+            display: inline-block;
+            width: 70%;
+            margin: 0;
+            font-weight: 500;
           }
 
           ul {
-            margin-left: 2em;
+            position: relative;
+
+            li::marker {
+              font-size: 0.9em;
+            }
+
+            &:before {
+              position: absolute;
+              left: 0;
+              top: 0;
+              content: '';
+              height: 100%;
+              width: 0;
+              border-left: 3px solid var(--clr-accent);
+            }
           }
         }
 
@@ -426,6 +441,9 @@ p {
         }
 
         .project-links {
+          display: flex;
+          align-items: flex-end;
+
           a {
             padding: 0.7em;
             border-radius: 0.5em;

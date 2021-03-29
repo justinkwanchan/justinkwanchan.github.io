@@ -366,7 +366,6 @@ p {
   .project-slide {
     flex-direction: column;
     justify-content: flex-start;
-    // align-items: center;
 
     .project-title {
       align-self: center;
@@ -375,18 +374,20 @@ p {
 
     .project-content {
       display: flex;
+      justify-content: flex-end;
       width: 85%;
 
       .project-image {
         object-fit: contain;
         max-width: 50%;
         height: auto;
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+        margin-right: 2.5vw;
+        filter: drop-shadow(0 5px 10px #aaa);
       }
 
       .project-text {
-        margin: 0 9em 0 3em;
-        max-width: 50%;
+        margin: 0 3% 0 0;
+        width: 37%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -408,6 +409,7 @@ p {
         }
 
         .project-description {
+          max-width: 60ch;
           grid-area: a;
         }
 

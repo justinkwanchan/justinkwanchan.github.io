@@ -415,12 +415,12 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .my-projects .project-slide .project-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 1.3em 0;
 }
 
@@ -428,7 +428,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 85%;
 }
 
 .my-projects .project-slide .project-content .project-image {
@@ -442,6 +442,7 @@ p {
 
 .my-projects .project-slide .project-content .project-text {
   margin: 0 9em 0 3em;
+  max-width: 50%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];

@@ -366,15 +366,16 @@ p {
   .project-slide {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    // align-items: center;
 
     .project-title {
+      align-self: center;
       margin: 1.3em 0;
     }
 
     .project-content {
       display: flex;
-      width: 90%;
+      width: 85%;
 
       .project-image {
         object-fit: contain;
@@ -385,6 +386,7 @@ p {
 
       .project-text {
         margin: 0 9em 0 3em;
+        max-width: 50%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:

@@ -270,7 +270,8 @@ p {
     margin-right: 44%;
   }
   .intro .intro__img {
-    right: 300px;
+    max-width: 45%;
+    right: 13%;
   }
 }
 
@@ -314,6 +315,7 @@ p {
 }
 
 .about-me__body img {
+  max-width: 37%;
   -webkit-filter: drop-shadow(4px 8px 11px #2c2c2c);
           filter: drop-shadow(4px 8px 11px #2c2c2c);
 }
@@ -644,6 +646,7 @@ p {
 }
 
 .contact-me img {
+  max-width: 55%;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   -webkit-filter: drop-shadow(7px 12px 4px grey);

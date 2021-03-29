@@ -253,7 +253,8 @@ p {
       margin-right: 44%;
     }
     .intro__img {
-      right: 300px;
+      max-width: 45%;
+      right: 13%;
     }
   }
 }
@@ -290,6 +291,7 @@ p {
   }
 
   img {
+    max-width: 37%;
     filter: drop-shadow(4px 8px 11px rgb(44, 44, 44));
   }
 }
@@ -566,6 +568,7 @@ p {
   }
 
   img {
+    max-width: 55%;
     transform: scaleX(-1);
     filter: drop-shadow(7px 12px 4px grey);
   }

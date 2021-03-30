@@ -516,6 +516,32 @@ p {
   }
 }
 
+@media (max-width: 1500px) {
+  .my-projects {
+    .slide {
+      header {
+        padding: 14% 0 0 14%;
+      }
+
+      .portfolio {
+        margin-top: 12%;
+      }
+    }
+
+    .project-slide {
+      .project-title {
+        margin: 2.5em 0 1.3em;
+      }
+
+      .project-content {
+        .project-text {
+          margin: 0 4% 0 0;
+        }
+      }
+    }
+  }
+}
+
 .fp-slidesNav.fp-bottom {
   text-align: center;
   bottom: -30px;

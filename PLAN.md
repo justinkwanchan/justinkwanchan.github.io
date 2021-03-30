@@ -1,6 +1,5 @@
 # To-do
 
-- Fix 1px line between nav bars and points
 - Add favicon
 - Talk about challenges of projects including this portfolio
 - Refactor
@@ -18,6 +17,7 @@
   - Find logo-ish font for name
 - Find colour theme
 - Change style of rightside nav
+- Fix 1px line between nav bars and points
 
 # Sections
 
@@ -27,7 +27,7 @@
 
 ## About
 
-- Write a mini-bio
+- Complete
 
 ## Projects
 

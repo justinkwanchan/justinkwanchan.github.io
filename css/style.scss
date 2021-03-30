@@ -30,7 +30,7 @@
   :root {
     --fs-h1: 7.5rem;
     --fs-h2: 5rem;
-    --fs-h3: 3rem;
+    --fs-h3: 3.3rem;
     --fs-subtitle: 2rem;
     --fs-body: 1rem;
   }
@@ -325,57 +325,57 @@ p {
       left: 0;
       padding: 12% 0 0 15%;
     }
-  }
 
-  .portfolio {
-    margin-top: 9%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      '. . a b'
-      'c d e f';
-    gap: 1.5em 2.5em;
-    max-width: 65%;
-    height: calc(77% - 150px);
-    overflow-y: hidden;
+    .portfolio {
+      margin-top: 9%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        '. . a b'
+        'c d e f';
+      gap: 1.5em 2.5em;
+      max-width: 65%;
+      height: calc(77% - 150px);
+      overflow-y: hidden;
 
-    .grid-1x1 {
-      grid-area: a;
-    }
-    .grid-1x2 {
-      grid-area: b;
-    }
-    .grid-1x3 {
-      grid-area: c;
-    }
-    .grid-2x1 {
-      grid-area: d;
-    }
-    .grid-2x2 {
-      grid-area: e;
-    }
-    .grid-2x3 {
-      grid-area: f;
-    }
-
-    .portfolio__item {
-      position: relative;
-      height: auto;
-
-      .portfolio__img {
-        box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
+      .grid-1x1 {
+        grid-area: a;
+      }
+      .grid-1x2 {
+        grid-area: b;
+      }
+      .grid-1x3 {
+        grid-area: c;
+      }
+      .grid-2x1 {
+        grid-area: d;
+      }
+      .grid-2x2 {
+        grid-area: e;
+      }
+      .grid-2x3 {
+        grid-area: f;
       }
 
-      .portfolio__item-description {
-        border: 1px solid #cccccc;
-        border-top: 0;
-        margin: 0;
-        padding: 1em;
-      }
+      .portfolio__item {
+        position: relative;
+        height: auto;
 
-      &:hover,
-      &:focus {
-        outline: none;
+        .portfolio__img {
+          box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
+        }
+
+        .portfolio__item-description {
+          border: 1px solid #cccccc;
+          border-top: 0;
+          margin: 0;
+          padding: 1em;
+        }
+
+        &:hover,
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
@@ -488,11 +488,17 @@ p {
   .my-projects {
     .slide {
       header {
-        padding: 11% 0 0 14%;
+        padding: 12% 0 0 14%;
       }
 
       .portfolio {
         margin-top: 10.5%;
+      }
+    }
+
+    .project-slide {
+      .project-title {
+        margin: 2.5em 0 1.3em;
       }
     }
   }

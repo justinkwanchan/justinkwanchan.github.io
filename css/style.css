@@ -28,7 +28,7 @@
   :root {
     --fs-h1: 7.5rem;
     --fs-h2: 5rem;
-    --fs-h3: 3rem;
+    --fs-h3: 3.3rem;
     --fs-subtitle: 2rem;
     --fs-body: 1rem;
   }
@@ -350,7 +350,7 @@ p {
   padding: 12% 0 0 15%;
 }
 
-.my-projects .portfolio {
+.my-projects .slide .portfolio {
   margin-top: 9%;
   display: -ms-grid;
   display: grid;
@@ -363,61 +363,61 @@ p {
   overflow-y: hidden;
 }
 
-.my-projects .portfolio .grid-1x1 {
+.my-projects .slide .portfolio .grid-1x1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: a;
 }
 
-.my-projects .portfolio .grid-1x2 {
+.my-projects .slide .portfolio .grid-1x2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
 }
 
-.my-projects .portfolio .grid-1x3 {
+.my-projects .slide .portfolio .grid-1x3 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: c;
 }
 
-.my-projects .portfolio .grid-2x1 {
+.my-projects .slide .portfolio .grid-2x1 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: d;
 }
 
-.my-projects .portfolio .grid-2x2 {
+.my-projects .slide .portfolio .grid-2x2 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: e;
 }
 
-.my-projects .portfolio .grid-2x3 {
+.my-projects .slide .portfolio .grid-2x3 {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: f;
 }
 
-.my-projects .portfolio .portfolio__item {
+.my-projects .slide .portfolio .portfolio__item {
   position: relative;
   height: auto;
 }
 
-.my-projects .portfolio .portfolio__item .portfolio__img {
+.my-projects .slide .portfolio .portfolio__item .portfolio__img {
   -webkit-box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 3px 20px -10px rgba(0, 0, 0, 0.25);
 }
 
-.my-projects .portfolio .portfolio__item .portfolio__item-description {
+.my-projects .slide .portfolio .portfolio__item .portfolio__item-description {
   border: 1px solid #cccccc;
   border-top: 0;
   margin: 0;
   padding: 1em;
 }
 
-.my-projects .portfolio .portfolio__item:hover, .my-projects .portfolio .portfolio__item:focus {
+.my-projects .slide .portfolio .portfolio__item:hover, .my-projects .slide .portfolio .portfolio__item:focus {
   outline: none;
 }
 
@@ -550,10 +550,13 @@ p {
 
 @media (max-width: 1700px) {
   .my-projects .slide header {
-    padding: 11% 0 0 14%;
+    padding: 12% 0 0 14%;
   }
   .my-projects .slide .portfolio {
     margin-top: 10.5%;
+  }
+  .my-projects .project-slide .project-title {
+    margin: 2.5em 0 1.3em;
   }
 }
 

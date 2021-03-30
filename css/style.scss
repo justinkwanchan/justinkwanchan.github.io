@@ -632,5 +632,6 @@ p {
     max-width: 55%;
     transform: scaleX(-1);
     filter: drop-shadow(7px 12px 4px grey);
+    pointer-events: none;
   }
 }

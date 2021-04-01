@@ -63,6 +63,18 @@
   }
 }
 
+@media (max-width: 1000px) {
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 3.7rem;
+    --fs-h3: 2.7rem;
+    --fs-intro-subtitle: 2rem;
+    --fs-subtitle: 1.4rem;
+    --fs-body: 1rem;
+    --fs-body-about-contact: 1.1rem;
+  }
+}
+
 body {
   background-color: var(--clr-background);
   color: var(--clr-dark);
@@ -106,6 +118,14 @@ body {
   a {
     text-decoration: none;
     color: inherit;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    .background {
+      background-image: none;
+    }
   }
 }
 
@@ -231,6 +251,25 @@ p {
 
 @media (max-width: 1250px) {
   #fp-nav.fp-right {
+    font-size: 0.9rem;
+
+    ul {
+      margin-right: -1.7em;
+
+      li {
+        padding-bottom: 2.7em;
+
+        a {
+          width: 188px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #fp-nav.fp-right {
+    top: 20%;
     font-size: 0.9rem;
 
     ul {

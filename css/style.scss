@@ -51,6 +51,18 @@
   }
 }
 
+@media (max-width: 1250px) {
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 4rem;
+    --fs-h3: 3rem;
+    --fs-intro-subtitle: 2rem;
+    --fs-subtitle: 1.6rem;
+    --fs-body: 1rem;
+    --fs-body-about-contact: 1.1rem;
+  }
+}
+
 body {
   background-color: var(--clr-background);
   color: var(--clr-dark);
